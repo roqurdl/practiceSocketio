@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Noom
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body
+        header
+            h1 Noom
+        main
+            div#start
+                h2 Welcome to Noom
+                form
+                    input(id="rname" placeholder="Room name" type="text" required)
+                    input(id="nick" placeholder="Nickname" type="text" required)
+                    button Join room
+                h4 Open Rooms&rarr;
+                ul
+            div#room
+                h3
+                ul
+                form
+                    input(placeholder="Write Message" type="text" required)
+                    button Send Message
+            div#nickname
+                h3 
+                form
+                    input(placeholder="Write new nickname" type="text" required)
+                    button change
+        script(src="/socket.io/socket.io.js") 
+        script(src="/public/app.js") 
